@@ -42,6 +42,7 @@ public class task5 {
             return array;
         }    
 
+// исправить перебор в новую Ф. 
 
         public static int numbInt(char[]arr) {
             int x = 0;
