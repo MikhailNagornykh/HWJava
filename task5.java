@@ -27,7 +27,11 @@ public class task5 {
         char[] num2 = arrayS(numbers[1]);
         char[] summ = arrayS(numbers[2]);
         
-        numbInt(num1);
+        int num = numbInt(num1);
+
+        System.out.println(num);
+
+
 
     }
 
@@ -38,27 +42,28 @@ public class task5 {
             return array;
         }    
 
+
         public static int numbInt(char[]arr) {
             int x = 0;
             int[] arrInt =new int[arr.length];
             for(int i = 0; i < arr.length; i++){
                 if(arr[i]=='?'){
                     for(int j = 0; j < 10; j++){
-                        arr[i] = (char) j;
-                    }
-                
-
-                int[i] = Character.getNumericValue(arr[i]);    
-
-                System.out.println(arr[i]);
-
+                        
+                        arrInt[i] = j;
+                        System.out.println(arrInt[i]);
+                    } 
+                    
+                } else {
+                    arrInt[i] = Character.digit(arr[i], 10); 
+              
                 }
-            }
-
-            return x;
             
-        }
-} 
+            }
+            return x = arrInt[0]*10+arrInt[1];
+
+        } 
+    }
  
  
  
