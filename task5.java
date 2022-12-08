@@ -13,7 +13,63 @@ import java.util.Arrays;
 
 public class task5 {
     public static void main(String[] args) {
-        
+       
+        String task = "2? + ?5 = 69";
+        task = task.replaceAll("\\s+", "");
+        task = task.replace('+', '=');
+//        System.out.println(task);
+        String[] numbers = task.split("\\=");
+        int length = numbers.length; 
+//        System.out.println(length);
+    
+//    System.out.println( arrayS(numbers[1]));
+        char[] num1 = arrayS(numbers[0]);
+        char[] num2 = arrayS(numbers[1]);
+        char[] summ = arrayS(numbers[2]);
+    }
+
+
+        public static char[] arrayS(String str) {
+            String element = str;
+            char[] array = element.toCharArray();
+            return array;
+        }    
+
+        public static int numbInt(char[]arr) {
+            int x = 0;
+
+            return x;
+            
+        }
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        /*       
         String task = "2? + ?5 = 69";
         task = task.replaceAll("\\s+", "");
         char[] array = task.toCharArray();
@@ -28,12 +84,27 @@ public class task5 {
                 }
             }
         }
-
         
-        
+    }
 
 
-/*
+    public static char number() {
+        char x = ' '; 
+        for(int j = 0; j < 10; j++){
+
+            x = (char) j;
+
+        }
+        return x;
+    }
+}
+
+
+
+
+
+
+
         int length = array.length;
         int[] num = new int[length];
 
@@ -42,16 +113,18 @@ public class task5 {
         }
 
         System.out.println(Arrays.toString(num));
-*/
+
 
         qwee(array);
     }
     
     public static void qwee(char[] array) {
-                
+        System.out.println(array);
+
+        
         for(int i = 0; i< array.length; i++)
             if(array[i] == 'k'){
-                array[i] = 's';
+                array[i] = 'p';
 
             }
         for(int k = 0; k <= 9; k++ ){
@@ -70,3 +143,4 @@ public class task5 {
        
 
 
+*/
