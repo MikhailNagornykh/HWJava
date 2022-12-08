@@ -19,13 +19,16 @@ public class task5 {
         task = task.replace('+', '=');
 //        System.out.println(task);
         String[] numbers = task.split("\\=");
-        int length = numbers.length; 
+//        int length = numbers.length; 
 //        System.out.println(length);
     
 //    System.out.println( arrayS(numbers[1]));
         char[] num1 = arrayS(numbers[0]);
         char[] num2 = arrayS(numbers[1]);
         char[] summ = arrayS(numbers[2]);
+        
+        numbInt(num1);
+
     }
 
 
@@ -37,6 +40,20 @@ public class task5 {
 
         public static int numbInt(char[]arr) {
             int x = 0;
+            int[] arrInt =new int[arr.length];
+            for(int i = 0; i < arr.length; i++){
+                if(arr[i]=='?'){
+                    for(int j = 0; j < 10; j++){
+                        arr[i] = (char) j;
+                    }
+                
+
+                int[i] = Character.getNumericValue(arr[i]);    
+
+                System.out.println(arr[i]);
+
+                }
+            }
 
             return x;
             
