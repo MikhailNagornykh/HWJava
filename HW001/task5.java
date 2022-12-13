@@ -42,21 +42,28 @@ public class task5 {
             return array;
         }    
 
-// исправить перебор в новую Ф. 
+//  
 
-        public static int numbInt(char[]arr) {
+        public static int numbInt(char[]arr1, char[]arr2, char[]arr3) {
             int x = 0;
-            int[] arrInt =new int[arr.length];
-            for(int i = 0; i < arr.length; i++){
-                if(arr[i]=='?'){
+            char[] num1 = new char [arr1.length];
+            char[] num2 = new char [arr2.length];
+            char[] summ = new char [arr3.length];
+            num1 = arr1;
+            num2 = arr2;
+            summ = arr3;
+
+            int[] arrInt1 =new int[num1.length];
+            for(int i = 0; i <num1.length; i++){
+                if(num1[i]=='?'){
                     for(int j = 0; j < 10; j++){
+                        arrInt1[i] = j;
                         
-                        arrInt[i] = j;
-                        System.out.println(arrInt[i]);
+                        
                     } 
                     
                 } else {
-                    arrInt[i] = Character.digit(arr[i], 10); 
+                    arrInt1[i] = Character.digit(num1[i], 10); 
               
                 }
             
