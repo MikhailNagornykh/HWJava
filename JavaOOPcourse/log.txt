@@ -1,0 +1,26 @@
+new session starts
+user calls function 9
+user add new record: Vasya Vasiliev +79218585190
+user calls function 8
+user change record: Vasya Vasiliev +79218585190
+to record: Vasya Vasiliev +79818989191
+user calls function 5
+user calls function 9
+user add new record: Sidor Sidorov +79313636236
+user calls function *
+new session starts
+user calls function 5
+user calls function 1
+user calls function 2
+user calls function 1
+user calls function 2
+user calls function 2
+user calls function *
+new session starts
+user calls function 1
+user calls function 3
+user calls function 4
+user calls function 1
+user calls function 5
+user calls function 2
+user calls function 5
